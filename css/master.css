@@ -1,0 +1,226 @@
+:root {
+    --main-color: #ff8f34;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    height: 2000px;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+/* start setting box */
+.toggle-settings {
+    left: 30px;
+    top: -6px;
+    left: 829px;
+    cursor: pointer;
+    width: 30px;
+    border-left: solid white 2px;
+}
+
+.landing-page .setting:hover
+{
+    color: var(--main-color);
+}
+/* end setting box */
+/* Start landig page */
+.landing-page{
+    min-height: 100vh;
+    background-image: url(../images/01.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.landing-page .overlay{
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    opacity: 60%;
+}
+.landing-page .header-area{
+    position: relative;
+    z-index: 2;
+    color: white;
+    display: flex ;
+    margin-right: 60px;
+}
+
+.header-area .logo{
+    width: 300px;
+    padding: 25px 35px ;
+    font-size: 25px;
+    font-weight: bold;
+}
+.header-area .logo span{
+    color: var(--main-color);
+}
+.header-area .links{
+    list-style: none;
+    padding-right: 20px;
+    width: 100%;
+    text-align: right;
+}
+.header-area li{
+    display: inline-block;
+    padding: 15px; 
+}
+.header-area li a{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    transition: .3s;
+}
+.header-area  li a:hover,
+.header-area  li a.active{
+    color: var(--main-color);
+}
+.introduction-text{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+    color: white;
+    text-align: center;
+}
+.introduction-text p{
+    font-size: 20px;
+}
+.introduction-text p span{
+    color: var(--main-color);
+}
+
+/* End landig page */
+/* Start About Ua */
+
+.abut-us{
+display: flex;
+padding-top: 50px;
+padding-bottom: 50px;
+}
+.abut-us .info-box{
+    flex: 2;
+}
+.abut-us .info-box h2{
+font-weight: bold;
+font-size: 30px;
+color: var(--main-color);
+}
+.abut-us .info-box p{
+line-height: 1.8;
+color: #767676;
+margin: 0;
+}
+.abut-us .img-box{
+flex: 1;
+text-align: center;
+}
+.abut-us .img-box img{
+width: 250px;
+}
+/* End About Ua */
+/*Start Menu */
+.Menu{
+    background-color: #ecebeb;
+    padding-bottom: 50px;
+}
+.Menu h2{
+    font-weight: bold;
+    font-size: 30px;
+    color: var(--main-color);
+    padding-top: 70px;
+}
+
+.Menu .menus img{
+    width: 500px;
+    height: 400px;
+    margin: 5px 100px 10px 0;
+    border-radius: 32px;
+    display: inline-block;
+}
+/* End Menu */
+    
+/* Start Contact */
+.cards_contact{
+    padding-bottom: 50px;
+}
+.cards_contact h2{
+    font-weight: bold;
+    font-size: 30px;
+    color: var(--main-color);
+    padding-top: 50px;
+}
+
+.cards_contact .icon {
+    font-size: 4.5em;
+}
+.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.card {
+    background-color: white;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    border-radius: 8px;
+    padding: 25px;
+    margin: 15px;
+    transition: .7s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card i{
+    color: var(--main-color);
+}
+.card:hover {
+    transform: scale(1.1);
+}
+
+.cards_contact .info h3 {
+    color: #000;
+}
+
+.cards_contact .info p {
+    font-size: 1.5em;
+}
+
+/* End Contact */
+/* Start Footer */
+.footer {
+    background-color: rgb(94, 94, 94);
+    color: white;
+    padding: 0 32px 0 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer_title {
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.footer_title span {
+    color: var(--main-color);
+}
+
+.footer .social-icons a {
+    font-size: 1.5em;
+    padding: 0 12px 0 0;
+}
+.footer .social-icons i{
+    color: var(--main-color);
+}
+.footer_title samp{
+    color: var(--main-color);
+    font-size: 24px;
+}
+/* End Footer */
